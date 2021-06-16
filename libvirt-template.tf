@@ -34,14 +34,14 @@ provider "libvirt" {
 resource "libvirt_volume" "os_image" {
   name = "${var.hostname}-os_image"
   pool = "default"
-  source = "https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img"
+  source = "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img"
   format = "qcow2"
 }
 
 
 # Define KVM domain to create
-resource "libvirt_domain" "ubuntu-18" {
-  name   = "ubunut-18"
+resource "libvirt_domain" "ubuntu-20-stable" {
+  name   = "ubunut-20-stable"
   memory = "1024"
   vcpu   = 1
 
