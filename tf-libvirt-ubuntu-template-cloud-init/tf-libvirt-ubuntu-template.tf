@@ -42,7 +42,7 @@ variable "VM_COUNT" {
 }
 
 variable "VM_USER" {
-  default = "developer"
+  default = "ubuntu"
   type = string
 }
 
