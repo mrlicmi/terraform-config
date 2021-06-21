@@ -1,10 +1,11 @@
 # terraform-config files 
 Terraform config files 
 
-Standalone 
-
-Cloud init variant 
+1) Standalone
 OS: 
--Ubuntu
+  -Ubuntu
+3) Cloud init variant 
+OS: 
+  -Ubuntu
 
 
